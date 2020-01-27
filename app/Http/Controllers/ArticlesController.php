@@ -81,7 +81,7 @@ class ArticlesController extends Controller
         $article -> update($validatedAttributes);
         
 
-        return redirect("/articles/$article->id");
+        return redirect("$article->path()");
     }
 
     /**

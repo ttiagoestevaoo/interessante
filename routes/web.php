@@ -22,5 +22,8 @@ Route::get('/about', function () {
 Route::resource('/articles', 'ArticlesController',[
     'names' => [
         'index' => 'articles.index',
-        'show' => 'faq.new'
+        'show' => 'articles.show',
+        'edit' => 'articles.edit',
+        'create' => 'articles.create',
+        'store' => 'articles.store'
     ]]);

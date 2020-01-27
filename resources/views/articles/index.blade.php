@@ -7,8 +7,8 @@
         
         <li class="">
         <h3>{{$article->title}}</h3>
-            <p><a href="/articles/{{$article->id}}">{{$article->excerpt}}</a></p>
-            <p><a href="/articles/{{$article->id}}">{{$article->body}}</a></p>
+        <p><a href="{{$article->path()}}">{{$article->excerpt}}</a></p>
+        <p><a href="{{$article->path()}}">{{$article->body}}</a></p>
         </li>
 
         @endforeach

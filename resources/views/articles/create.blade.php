@@ -6,7 +6,7 @@
             <div class="content">
                 
                 <h1>New Article</h1>
-            <form action="/articles" method="post">
+            <form action="{{route('articles.store')}}" method="post">
                 @csrf
                 <div class="field">
                     <label for="title" class="label"> Tittle</label>
