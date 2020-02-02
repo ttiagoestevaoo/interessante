@@ -35,6 +35,19 @@
                     <textarea class='input'  name="body" id="body"> </textarea>
                 </div>
             </div>
+
+            <div class="field">
+                <label for="body" class="label"> Tags</label>
+                <select name="tags[]" multiple id="">
+
+                    @foreach ($tags as $tag)
+                <option value="{{$tag->id}}">{{$tag->name}}</option> 
+                    @endforeach
+                </select>
+                @error('tags')
+            <p class="help is-danger">{{$errors->first('tags')}}</p>
+                @enderror
+            </div>
             
             <div class="field id-grouped">
                 <div class="control">

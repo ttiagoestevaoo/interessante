@@ -2,8 +2,8 @@
 
 @section('content')
 <div id="wrapper">
+    @forelse ($articles as $article)
     <ul class="style1">
-        @foreach ($articles as $article)
         
         <li class="">
         <h3>{{$article->title}}</h3>
@@ -11,7 +11,9 @@
         <p><a href="{{$article->path()}}">{{$article->body}}</a></p>
         </li>
 
-        @endforeach
-    <ul>
+        <ul>
+    @empty
+    <p>No relevant articles</p>
+    @endforelse
 </div>
 @endsection
