@@ -11,6 +11,6 @@ Um blog, sendo possível criar aritgos e definir tag a eles.
 
 ## Ferramentas e bibliotecas
 
-Abaixo contém tudo que é utilizado para contribuir ao sistema.
+Abaixo contém tudo que foi utilizado para contribuir ao sistema.
 
 - Laravel
